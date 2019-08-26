@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DailyFood</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onresize="resize()" onload="resize()">
+    <div class="dashboard-container container">
+        <div class="row">
+            <div class="col-12 responsive-sidebar side-menu_bg ">
+                <div class="side-menu">
+
+                    <i class="fa fa-align-left fa-2x toggle-btn" onclick="openNav()"></i>
+                    <div class="logo">
+                        <img src="image/logo-trans.png" alt="DailyFood">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 hide-menu p-0" id="hide">
+                <div class="nav-side-menu side-menu ">
+                    <div class="logo responsive-logo">
+                        <img src="image/logo-trans.png" alt="DailyFood">
+                    </div>
+
+                    <div class="menu-list">
+
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+                        <ul id="menu-content" class="menu-content">
+                            <li>
+                                <a href="index.html" onclick="closeNav()">
+                                    <img src="image/pizza.svg">
+                                    <span>Emotions Recognitions Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" onclick="closeNav()">
+                                    <img src="image/pizza.svg">
+                                    <span>Emotions Recognitions Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" onclick="closeNav()">
+                                    <img src="image/pizza.svg">
+                                    <span>Emotions Recognitions Dashboard</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" onclick="closeNav()">
+                                    <img src="image/pizza.svg">
+                                    <span>Emotions Recognitions Dashboard</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="col-md-10 col-sm-12 p-0">
+                <div class="content-body">
+                    <div class="cards row">
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="card-content">
+                                <span class="title">cooking rate</span>
+                                <div class="guage">
+                                    <div class="circle-loader">
+                                        <div id="cookingRate" class="loader-item">
+                                            <span class="loader-info">Total rates
+                                                <b>55</b>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tabs">
+                                    <div class="row">
+                                        <div class="col tab green ">
+                                            <p class="tab-title">good</p>
+                                            <span class="tab-number">36</span>
+                                        </div>
+                                        <div class="col tab default">
+                                            <p class="tab-title">ok</p>
+                                            <span class="tab-number">12</span>
+                                        </div>
+                                        <div class="col tab orange">
+                                            <p class="tab-title">bad</p>
+                                            <span class="tab-number">7</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="card-content">
+                                <span class="title">content</span>
+                                <div class="tags">
+                                    <div id="content-tags">
+                                        <span class="tags-title">ingrediants</span>
+
+                                        <div class="tag-mark">
+                                            <span class="badge">greens</span>
+                                            <span class="badge">onion</span>
+                                            <span class="badge">tomatoes</span>
+                                            <span class="badge">olive oil</span>
+                                            <span class="badge">sausage</span>
+                                        </div>
+                                        <div class="distribution">
+                                            <span class="tags-title">distribution</span>
+                                            <div class="tag-mark">
+                                                <span class="badge">house Pizzera</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="title">color</p>
+                                            <span class="number">red</span>
+                                        </div>
+                                        <div class="col">
+                                            <p class="title">size</p>
+                                            <span class="number">large</span>
+                                        </div>
+                                        <div class="col">
+                                            <p class="title">suase</p>
+                                            <span class="number">regular</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="card-content">
+                                <span class="title">quality</span>
+                                <div class="guage">
+                                    <div class="circle-loader">
+                                        <div id="quality" class="loader-item">
+                                            <span class="loader-info">Total
+                                                <b>61</b>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tabs">
+                                    <div class="row">
+                                        <div class="col tab green ">
+                                            <p class="tab-title">good</p>
+                                            <span class="tab-number">68%</span>
+                                        </div>
+                                        <div class="col tab orange">
+                                            <p class="tab-title">bad</p>
+                                            <span class="tab-number">32%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 mb-4">
+                            <div class="card-content">
+                                <span class="title">pizza type classifire -
+                                    <b>live stream cameras</b>
+                                </span>
+                                <div class="live-stream">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="live-stream_card">
+
+                                                <div class="live-corners">
+                                                    <span class="live"></span>
+                                                    <img src="image/pizza-cooked.jpg" class="main" alt="">
+                                                    <img src="image/live_corners.svg" class="bg" alt="">
+
+                                                </div>
+                                                <div class="card-title">
+                                                    before pizza is cooked
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="live-stream_card">
+
+                                                <div class="live-corners">
+                                                    <span class="live"></span>
+                                                    <img src="image/pizza-cooked.jpg" class="main" alt="">
+                                                    <img src="image/live_corners.svg" class="bg" alt="">
+
+                                                </div>
+                                                <div class="card-title">
+                                                    After pizza is cooked
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tabs">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-12 tab green ">
+                                            <p class="tab-title">4 Season pizza </p>
+                                        </div>
+                                        <div class="col-lg-9 col-sm-12 mt-2">
+                                            <div id="tags" class="carousel slide" data-ride="carousel"
+                                                data-interval="false">
+                                                <div class="carousel-inner tag-mark ">
+                                                    <div class="carousel-item active">
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>greens</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>greens</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>greens</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>greens</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>greens</span>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>onion</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>tomatoes</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>olive oil</span>
+                                                        <span class="badge">
+                                                            <span class="badge-img"></span>sausage</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Left and right controls -->
+                                                <a class="carousel-control-prev" href="#tags" data-slide="prev">
+                                                    <span class="fa fa-angle-left"></span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#tags" data-slide="next">
+                                                    <span class="fa fa-angle-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 mb-4">
+                            <div class="card-content">
+                                <span class="title">content distribution</span>
+                                <div class="guage">
+                                    <div class="circle-loader">
+                                        <div id="distribution" class="loader-item">
+                                            <span class="loader-info">Total
+                                                <b>36</b>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tabs">
+                                    <div class="row">
+                                        <div class="col tab green ">
+                                            <p class="tab-title">good</p>
+                                            <span class="tab-number">72%</span>
+                                        </div>
+                                        <div class="col tab orange">
+                                            <p class="tab-title">bad</p>
+                                            <span class="tab-number">28%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="donut-chart.js"></script>
+<script src="javascript.js"></script>
+
+</html>
