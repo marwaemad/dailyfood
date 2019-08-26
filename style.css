@@ -66,6 +66,7 @@ body {
   display: inline-flex;
   padding: 10px 0 10px 5px;
   background-color: #f7f8fa;
+  margin-bottom: 2px;
 }
 .dashboard-container .side-menu ul li img {
   width: 12%;
@@ -74,6 +75,8 @@ body {
 .dashboard-container .side-menu ul li span {
   font-size: 0.8vw;
   font-weight: bold;
+  width: 78%;
+  display: inline-block;
 }
 .dashboard-container .side-menu ul li:active, .dashboard-container .side-menu ul :focus, .dashboard-container .side-menu ul :hover {
   background-color: #f7f8fa;

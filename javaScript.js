@@ -7,11 +7,12 @@ function resize() {
   console.log(windowSize);
 
   $('.chart-donut').remove();
+  debugger
   if (windowSize <= 767) {
     var r = 80;
   }
-  else if(windowSize=823){
-    var r =50;
+  else if(windowSize === 823){
+    var r = 50;
   }
   else {
     var r = 85;
